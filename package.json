@@ -1,1 +1,39 @@
-{     "devDependencies": {         "grunt-inline": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-grunt-inline",     "homepage": "https://github.com/npmdoc/node-npmdoc-grunt-inline",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-grunt-inline.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [grunt-inline (v0.3.6)](https://github.com/chyingp/grunt-inline) [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-inline.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-inline) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-inline.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-inline)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "grunt-inline": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-grunt-inline",
+    "keywords": [
+        "documentation",
+        "grunt-inline"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_grunt_inline.js",
+    "name": "npmdoc-grunt-inline",
+    "nameAlias": "npmdoc_grunt_inline",
+    "nameOriginal": "npmdoc-grunt-inline",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-grunt-inline.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
