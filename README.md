@@ -1,4 +1,7 @@
-# api documentation for  [grunt-inline (v0.3.6)](https://github.com/chyingp/grunt-inline)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-inline.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-inline) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-inline.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-inline)
+# npmdoc-grunt-inline
+
+#### basic api documentation for  [grunt-inline (v0.3.6)](https://github.com/chyingp/grunt-inline)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-inline.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-inline) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-inline.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-inline)
+
 #### Inlines img, script and link tags into the same file.
 
 [![NPM](https://nodei.co/npm/grunt-inline.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-inline)
@@ -74,7 +77,8 @@
     "scripts": {
         "test": "grunt test"
     },
-    "version": "0.3.6"
+    "version": "0.3.6",
+    "bin": {}
 }
 ```
 
